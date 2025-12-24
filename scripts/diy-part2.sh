@@ -21,7 +21,7 @@ else
 fi
 
 # 预装 OpenClash（已注释，保持不变）
-# echo "CONFIG_PACKAGE_luci-app-openclash=y" >> .config
+ echo "CONFIG_PACKAGE_luci-app-openclash=y" >> .config
 
 # 删除 package/mtk/drivers/mt_wifi/files/mt7981-default-eeprom/e2p
 rm -f package/mtk/drivers/mt_wifi/files/mt7981-default-eeprom/e2p
