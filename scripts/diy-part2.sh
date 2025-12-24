@@ -10,9 +10,9 @@
 # 修改默认 IP
 CONFIG_FILE="package/base-files/files/bin/config_generate"
 if [ -f "$CONFIG_FILE" ]; then
-  if ! grep -q "192.168.2.1" "$CONFIG_FILE"; then
-    sed -i 's/192\.168\.6\.1/192.168.2.1/g; s/192\.168\.1\.1/192.168.2.1/g' "$CONFIG_FILE"
-    echo "IP 地址已更新为 192.168.2.1"
+  if ! grep -q "192.168.30.1" "$CONFIG_FILE"; then
+    sed -i 's/192\.168\.6\.1/192.168.30.1/g; s/192\.168\.1\.1/192.168.30.1/g' "$CONFIG_FILE"
+    echo "IP 地址已更新为 192.168.30.1"
   else
     echo "IP 地址已是 192.168.2.1，无需修改"
   fi
