@@ -10,32 +10,7 @@ on:
         type: choice
         required: true
         options:
-          - cmcc_rax3000m
           - cmcc_rax3000m-emmc
-          - cudy_ap3000-v1
-          - cudy_ap3000outdoor-v1
-          - cudy_m3000-v1
-          - cudy_re3000-v1
-          - cudy_tr3000-v1
-          - cudy_tr3000-v1-256mb
-          - cudy_wr3000-v1
-          - cudy_wr3000s-v1
-          - glinet_gl-mt2500
-          - glinet_gl-mt3000
-          - glinet_gl-x3000
-          - glinet_gl-xe3000
-          - h3c_magic-nx30-pro
-          - huasifei_wh3000-pro
-          - huasifei_wh3000-emmc
-          - jcg_q30-pro
-          - livinet_zr-3020
-          - routerich_ax3000
-          - routerich_ax3000-v1
-          - xiaomi_mi-router-ax3000t
-          - xiaomi_mi-router-wr30u-stock
-          - xiaomi_redmi-router-ax6000-stock
-          - zyxel_ex5601-t0-stock
-          - zyxel_nwa50ax-pro
       enable_5g_25db:
         description: '启用5G 25dB修改'
         type: boolean
@@ -275,7 +250,7 @@ jobs:
           ## 特性
           - 优化性能，支持USB/HNAT/Ksmbd。
           ${{ env.ENABLE_5G_25DB == 'true' && '- 5G 25dB 高功率。' || '' }}
-          - 地址: 192.168.2.1 (空密码)
+          - 地址: 192.168.30.1 (空密码)
           ## 安装
           备份 > 上传sysupgrade/factory > 重启。
           详情见README.md。仓库: https://github.com/padavanonly/immortalwrt-mt798x-24.10
